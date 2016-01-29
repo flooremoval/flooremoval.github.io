@@ -1,0 +1,127 @@
+@import "../bower_components/bootstrap/less/variables";
+@import "variables";
+
+/* fullscreen setup */
+html, body {
+  margin: 0;
+  /* give this to all tags from html to .fullscreen */
+  height:100%;
+}
+
+* {
+  font-family: @font;
+}
+
+/** SECTIONS **/
+
+.section {
+  background-attachment: fixed;
+}
+
+.introduction {
+  background: @orangeBackground;
+  border-bottom: 1px solid @whiteText;
+  color: @whiteText;
+}
+
+.coverage {
+  background: @greyBackground;
+  color: @whiteText;
+}
+
+.environmentallyFriendly {
+  background: @greenBackground;
+  border-top: 1px solid @whiteText;
+  border-bottom: 1px solid @greenBorder;
+  color: @greenText;
+}
+
+.experienced {
+  border-bottom: 1px solid @lightGreyBorder;
+  background: @lightGreyBackground;
+  color: @lightGreyText;
+}
+
+/** SECTIONS END **/
+
+p, h1 {
+  margin: 0px;
+}
+
+.coverage .container,
+.environmentallyFriendly .container,
+.experienced .container {
+  padding-top: 20px;
+}
+
+@media (max-width: @screen-xs-max) {
+  .coverage > .sectionCanvas > .sectionContent h1,
+  .coverage > .sectionCanvas > .sectionContent p,
+  .experienced > .sectionCanvas > .sectionContent h1,
+  .experienced > .sectionCanvas > .sectionContent ul,
+  .environmentallyFriendly > .sectionCanvas > .sectionContent p,
+  .environmentallyFriendly > .sectionCanvas > .sectionContent h1,
+  .contactUs > .sectionCanvas > .sectionContent p {
+    text-align: center;
+  }
+  .environmentallyFriendly > .sectionCanvas > .sectionContent img,
+  .coverage > .sectionCanvas > .sectionContent img {
+    padding-top: 40px;
+  }
+  .experienced > .sectionCanvas > .sectionContent li {
+    list-style-type: none;
+  }
+
+  .experienced > .sectionCanvas > .sectionContent {
+    padding-top: 40px;
+  }
+
+  .experienced > .sectionCanvas > .sectionContent img {
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .coverage > .sectionCanvas > .sectionContent h1,
+  .coverage > .sectionCanvas > .sectionContent p,
+  .experienced > .sectionCanvas > .sectionContent h1,
+  .experienced > .sectionCanvas > .sectionContent ul,
+  .contactUs > .sectionCanvas > .sectionContent p,
+  .environmentallyFriendly > .sectionCanvas > .sectionContent p,
+  .environmentallyFriendly > .sectionCanvas > .sectionContent h1 {
+    text-align: center
+  }
+
+  .environmentallyFriendly > .sectionCanvas > .sectionContent img {
+    padding-top: 20px;
+  }
+  .experienced > .sectionCanvas > .sectionContent img {
+    margin-bottom: -60px;
+  }
+  .experienced > .sectionCanvas > .sectionContent ul {
+    margin-bottom: 40px;
+  }
+
+  .coverage > .sectionCanvas > .sectionContent img {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .contactUs > .sectionCanvas > .sectionContent p {
+    text-align: center;
+  }
+  .environmentallyFriendly > .sectionCanvas > .sectionContent h1 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .contactUs > .sectionCanvas > .sectionContent p {
+    text-align: center;
+  }
+  .environmentallyFriendly > .sectionCanvas > .sectionContent h1 {
+    margin-top: 30px;
+  }
+
+}
