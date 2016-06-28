@@ -11,6 +11,7 @@
   },
   "author": "Art<opposite.bracket@gmail.com>",
   "devDependencies": {
+    "bower": "^1.7.9",
     "gulp": "^3.8.11",
     "gulp-contrib-copy": "^0.1.2",
     "gulp-jshint": "^1.9.0",

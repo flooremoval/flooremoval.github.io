@@ -1,0 +1,29 @@
+$orangeBackground: #ff6b00;
+$default: #ffffff;
+$greyBackground: #323333;
+$greenBackground: #00fdff;
+$greenBorder: #57cbce;
+$greenText: #1f5254;
+$lightGreyBackground: #efefef;
+$lightGreyText: #575757;
+$lightGreyBorder: #cbcbcb;
+
+#logo {
+  background-color: $orangeBackground;
+}
+
+#location {
+  background-color: $greyBackground;
+}
+
+#environmental {
+  background-color: $greenBorder;
+}
+
+#experience {
+  background-color: $lightGreyBackground;
+}
+
+#contact {
+  background-color: $default;
+}
