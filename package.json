@@ -1,0 +1,21 @@
+{
+  "name": "flooremoval.github.io",
+  "version": "1.0.0",
+  "description": "flooremoval.com's website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flooremoval/flooremoval.github.io.git"
+  },
+  "scripts": {
+    "gulp": "node node_modules/.bin/gulp"
+  },
+  "author": "Art<opposite.bracket@gmail.com>",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-contrib-copy": "^0.1.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
